@@ -1,17 +1,12 @@
 import { createApp } from 'vue'
 import { App } from './App'
-import { Bar } from './views/Bar'
-import { Foo } from './views/Foo'
-import {createRouter,createWebHashHistory} from 'vue-router'
+import { routes }from './config/routes'
+import {createRouter} from 'vue-router'
+import { history }from './shared/history'
 
-// 创建路由
-const routes = [
-    {path:'/',component:Foo},
-    {path:'/about',component:Bar},
-]
 // 创建router hash模式
 const router =createRouter({
-    history:createWebHashHistory(),
+    history,
     routes,
 })
 
