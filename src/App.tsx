@@ -6,11 +6,11 @@ import "./App.scss"
 
 export const App = defineComponent({
     setup(){
-        return ()=><>
-            <div>
+        return ()=>(
+            <div class={'page'}>
                 <RouterView></RouterView>
             </div>
-        </>
+        )
         
     }
 })
