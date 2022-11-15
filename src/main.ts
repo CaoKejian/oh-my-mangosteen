@@ -1,17 +1,12 @@
+import { routes } from './config/routes';
 import { createApp } from 'vue'
 import { App } from './App'
-import { routes }from './config/routes'
-import {createRouter} from 'vue-router'
-import { history }from './shared/history'
+import { createRouter } from 'vue-router'
+import { history } from './shared/history';
+import '@svgstore';
 
-// 创建router hash模式
-const router =createRouter({
-    history,
-    routes,
-})
+const router = createRouter({ history, routes })
 
 const app = createApp(App)
 app.use(router)
 app.mount('#app')
-
-// createApp(App).mount('#app')
