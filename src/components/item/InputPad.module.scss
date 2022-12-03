@@ -17,8 +17,11 @@
     .icon {
       width: 24px;
       height: 24px;
-      margin-right: 8px;
+      margin-right: 16px;
       fill: var(--amount-text);
+    }
+    .data{
+      letter-spacing: 1px;
     }
   }
   > .amount {
